@@ -96,38 +96,79 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
+```c++
+#include "main.h"
 
 
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_TIM2_Init(void);
 
+int main(void)
+{
+ 
+  MX_TIM2_Init();
 
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Init(&htim2);
+  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 
+  while (1)
+{
+
+}
+
+}
+```
 ## Output screen shots of proteus  :
+
+![op1](./op1.png)
+
+
  
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+
+ ![op2](./op2.png)
  
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+### FOR PULSE AT 4400
+
+![op3](./op3.png)
+
+TON = 1.8 * 1 = 1.8ms
+
+TOFF= 2.7 * 1 = 2.7ms
+
+TOTAL TIME =  2.7 + 1.8 = 4.5
+
+FREQUENCY =  1/(TOTAL TIME) = 1 / 4.5 = 2.22
+
+% DUTY =(2.7/4.5)*100 = 60%
+
+### FOR PULSE AT 1200
+
+![op3](./op4.png)
 
 TON = 
+
 TOFF=
+
 TOTAL TIME = 
+
 FREQUENCY = 1/(TOTAL TIME)
 
-FOR PULSE AT 700
+### FOR PULSE AT 900
+
+![op3](./op5.png)
 
 TON = 
+
 TOFF=
+
 TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
 
-
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
 FREQUENCY = 1/(TOTAL TIME)
 
 
