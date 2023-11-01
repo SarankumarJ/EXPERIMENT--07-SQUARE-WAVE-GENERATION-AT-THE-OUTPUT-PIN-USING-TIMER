@@ -151,25 +151,31 @@ FREQUENCY =  1/(TOTAL TIME) = 1 / 4.5 = 2.22
 
 ![op3](./op4.png)
 
-TON = 
+TON = 0.9 * 0.1 = 0.09ms
 
-TOFF=
+TOFF= 3.6 * 0.1 = 0.36ms
 
-TOTAL TIME = 
+TOTAL TIME = 0.09 + 0.36 = 0.45
 
-FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY = 1/(TOTAL TIME) = = 1 / 4.5 = 2.22
+
+% DUTY =(0.09/0.45)*100 = 20%
+
+FOR PULSE AT 900
 
 ### FOR PULSE AT 900
 
 ![op3](./op5.png)
 
-TON = 
+TON = 1.5 * 0.1 = 0.15ms
 
-TOFF=
+TOFF= 3 * 0.1 = 0.3ms
 
-TOTAL TIME = 
+TOTAL TIME = 0.15+0.3 = 0.45
 
-FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY = 1/(TOTAL TIME) = = 1 / 4.5 = 2.22
+
+% DUTY =(0.15/0.45)*100 = 33%
 
 
 ## Result :
